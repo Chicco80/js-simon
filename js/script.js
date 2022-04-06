@@ -40,10 +40,28 @@ function generaNumeri(){
            
       }
   }
- console.log(numCas)
+//  console.log(numCas)
 }
  generaNumeri();
- document.getElementById("numeriC").innerHTML = numCas;
+ document.getElementById("numeriC").innerHTML = `<h1>Memorizza i numeri</h1> ${numCas}`;
 
+let countdown = setInterval(startCountdown, 1000);
 
+let menoTrenta= 30;
+
+function startCountdown(){
+     console.log(menoTrenta);
+    if(menoTrenta === 1){
+        clearInterval(countdown);
+        document.getElementById("numeriC").innerHTML = "";
+       
+        
+       
+    }
+    menoTrenta--;
+
+} 
+
+ 
+ 
 
